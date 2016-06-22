@@ -7,9 +7,31 @@
 // Run `bin/check` from the command line to execute the automated tests.
 
 function uppercasesAllLetters($str) {
-  // Your code goes here.
+ $str = strtoupper($str);
+ return $str;
 }
 
 // Write your own "tests" below. Refer to the the examples from exercise #1.
+
+echo "\nTesting that capitalizes all lowercase. Should return ROOSTER.\n";
+if (uppercasesAllLetters("rooster") == "ROOSTER") {
+  echo "Success!";
+}
+else{
+  echo "Failed!";
+}
+echo "\n-------------------------------------------------------------------\n";
+
+echo "\nTesting that capitalizes some lowercase. Should return DOG.\n";
+if (uppercasesAllLetters("DoG") == "DOG") {
+  echo "Success!";
+}
+else{
+  echo "Failed!";
+}
+echo "\n-------------------------------------------------------------------\n";
+
+echo "\n###################################################################\n";
+echo "Tests complete.\n";
 
 ?>
